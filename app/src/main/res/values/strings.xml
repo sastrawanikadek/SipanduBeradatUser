@@ -1,13 +1,15 @@
 <resources>
     <string name="app_name">Masyarakat Sipandu Beradat</string>
-    <string name="belum_punya_akun">Belum Punya Akun?</string>
+    <string name="sipandu_beradat">Sipandu Beradat</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
     <string name="daftar_akun">Daftar Akun</string>
     <string name="daftar_sekarang">Daftar Sekarang</string>
     <string name="daftar">Daftar</string>
     <string name="simpan">Simpan</string>
-
+    <string name="kembali">Kembali</string>
     <string name="nama_lengkap">Nama Lengkap</string>
     <string name="nama_pengguna">Nama Pengguna</string>
+    <string name="konfirmasi_kata_sandi">Konfirmasi Kata Sandi</string>
     <string name="kata_sandi">Kata Sandi</string>
     <string name="nik">NIK</string>
     <string name="kabupaten">Kabupaten</string>
@@ -16,7 +18,7 @@
     <string name="desa_adat">Desa Adat</string>
     <string name="jenis_kelamin">jenis Kelamin</string>
     <string name="no_telepon">No Telepon</string>
-
+    <string name="sudah_punya_akun">Sudah punya akun?</string>
     <string name="profil">Profil</string>
     <string name="masuk">Masuk</string>
     <string name="keluar">Keluar</string>
@@ -24,7 +26,7 @@
     <string name="menunggu_validasi">Menunggu Validasi</string>
     <string name="menunggu_petugas">Menunggu Petugas</string>
     <string name="selesai">Selesai</string>
-
+    <string name="ilustrasi_awal">Ilustrasi Awal</string>
     <string name="ubah_nama_lengkap">Ubah Nama Lengkap</string>
     <string name="ubah_nama_pengguna">Ubah Nama Pengguna</string>
     <string name="ubah_wilayah">Ubah Wilayah</string>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/view_pager_image"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:contentDescription="@string/ilustrasi_awal" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/view_pager_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:letterSpacing="0.05" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/view_pager_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="@color/gray"
+        android:lineSpacingExtra="4dp" />
+
+</LinearLayout>
