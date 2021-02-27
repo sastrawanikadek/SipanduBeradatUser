@@ -33,16 +33,20 @@
     <string name="ubah_kata_sandi">Ubah Kata Sandi</string>
     <string name="ubah_jenis_kelamin">Ubah Jenis Kelamin</string>
     <string name="ubah_no_telepon">Ubah No Telepon</string>
-
+    <string name="syarat_dan_ketentuan">Syarat dan Ketentuan</string>
     <string name="maksimal_karakter">Maksimal 255 Karakter</string>
-
+    <string name="syarat_dan_ketentuan_awal">Mohon baca dan pahami</string>
+    <string name="syarat_dan_ketentuan_akhir">aplikasi ini. Segala bentuk pelanggaran akan dikenakan
+        sanksi sesuai dengan ketentuan yang berlaku</string>
+    <string name="persetujuan_syarat_dan_ketentuan">Saya telah membaca dan menyetujui syarat dan
+        ketentuan aplikasi</string>
     <string name="pelaporan">Pelaporan</string>
     <string name="laporkan">Laporkan</string>
     <string name="batalkan">Batalkan</string>
     <string name="apakah_yakin">Apakah Anda Yakin Ingin Melaporkan Kejadian Ini?</string>
     <string name="laporkan_keluhan_anda">Laporkan Keluhan Anda Agar Dapat Ditangani Oleh Pihak Yang Berwenang</string>
     <string name="pengajuan_laporan">Pengajuan Laporan</string>
-
+    <string name="keluhan">Keluhan</string>
     <string name="judul_laporan">Judul Laporan</string>
     <string name="jenis_laporan">Jenis Laporan</string>
     <string name="keterangan_laporan">Keterangan Laporan</string>
@@ -60,4 +64,9 @@
     <string name="status">Status</string>
     <string name="detail_darurat">Detail Darurat</string>
     <string name="pilih_lokasi_ini">Pilih Lokasi Ini</string>
+    <string name="pelaporan_darurat">Pelaporan Darurat</string>
+    <string name="tombol_darurat">Tombol Darurat</string>
+    <string name="deskripsi_tombol_darurat">Tekan tombol darurat berikut sesuai dengan keadaan
+        darurat yang Anda alami. Mohon diperhatikan bahwa pelaporan palsu dapat
+        diberikan sanksi sesuai dengan ketentuan yang berlaku</string>
 </resources>

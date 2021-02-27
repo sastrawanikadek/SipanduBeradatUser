@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/emergency"
+        android:icon="@drawable/ic_emergency"
+        android:title="@string/darurat"
+        android:contentDescription="@string/darurat"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/report"
+        android:icon="@drawable/ic_report"
+        android:title="@string/keluhan"
+        android:contentDescription="@string/keluhan"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profil"
+        android:contentDescription="@string/profil"
+        app:showAsAction="ifRoom" />
+
+</menu>

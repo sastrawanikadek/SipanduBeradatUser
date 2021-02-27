@@ -23,7 +23,10 @@ class LoginActivity : AppCompatActivity() {
 
     fun onClick(view: View) {
         when (view.id) {
-            R.id.btn_login -> handleLogin()
+            R.id.btn_login -> {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
             R.id.btn_register -> handleToRegister()
         }
     }

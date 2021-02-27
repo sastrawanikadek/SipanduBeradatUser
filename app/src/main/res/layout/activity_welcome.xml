@@ -44,6 +44,7 @@
         android:padding="24dp"
         android:orientation="vertical"
         android:background="@drawable/rounded_top_rectangle"
+        android:elevation="24dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <com.google.android.material.button.MaterialButton
