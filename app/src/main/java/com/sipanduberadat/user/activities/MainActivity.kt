@@ -36,9 +36,13 @@ class MainActivity : AppCompatActivity() {
                     top_app_bar_title.text = getString(R.string.keluhan)
                     view_pager.currentItem = 1
                 }
+                R.id.news -> {
+                    top_app_bar_title.text = getString(R.string.berita)
+                    view_pager.currentItem = 2
+                }
                 R.id.profile -> {
                     top_app_bar_title.text = getString(R.string.profil)
-                    view_pager.currentItem = 2
+                    view_pager.currentItem = 3
                 }
             }
             true
@@ -54,7 +58,8 @@ class MainActivity : AppCompatActivity() {
                 when (position) {
                     0 -> bottom_app_bar_navigation.selectedItemId = R.id.emergency
                     1 -> bottom_app_bar_navigation.selectedItemId = R.id.report
-                    2 -> bottom_app_bar_navigation.selectedItemId = R.id.profile
+                    2 -> bottom_app_bar_navigation.selectedItemId = R.id.news
+                    3 -> bottom_app_bar_navigation.selectedItemId = R.id.profile
                 }
             }
 

@@ -18,6 +18,13 @@
         app:showAsAction="ifRoom" />
 
     <item
+        android:id="@+id/news"
+        android:icon="@drawable/ic_newspaper"
+        android:title="@string/berita"
+        android:contentDescription="@string/berita"
+        app:showAsAction="ifRoom" />
+
+    <item
         android:id="@+id/profile"
         android:icon="@drawable/ic_profile"
         android:title="@string/profil"
