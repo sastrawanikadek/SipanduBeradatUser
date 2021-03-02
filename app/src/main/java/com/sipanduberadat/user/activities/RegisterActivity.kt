@@ -12,10 +12,7 @@ import com.sipanduberadat.user.adapters.DesaAdatArrayAdapter
 import com.sipanduberadat.user.adapters.KabupatenArrayAdapter
 import com.sipanduberadat.user.adapters.KecamatanArrayAdapter
 import com.sipanduberadat.user.dialogs.TermConditionDialog
-import com.sipanduberadat.user.models.Banjar
-import com.sipanduberadat.user.models.DesaAdat
-import com.sipanduberadat.user.models.Kabupaten
-import com.sipanduberadat.user.models.Kecamatan
+import com.sipanduberadat.user.models.*
 import kotlinx.android.synthetic.main.activity_register.*
 import kotlinx.android.synthetic.main.fragment_top_app_bar.*
 
@@ -90,8 +87,10 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun onResponseKabupaten() {
         kabupatens = listOf(
-                Kabupaten(1, "Badung", true),
-                Kabupaten(2, "Denpasar", true)
+                Kabupaten(1, Provinsi(1, Negara(1, "Indonesia", true),
+                        "Bali", true),"Badung", true),
+                Kabupaten(2, Provinsi(1, Negara(1, "Indonesia", true),
+                        "Bali", true),"Denpasar", true)
         )
 
         kabupaten_auto_complete.setAdapter(KabupatenArrayAdapter(this, kabupatens))

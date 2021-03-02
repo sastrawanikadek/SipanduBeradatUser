@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
                     top_app_bar_title.text = getString(R.string.pelaporan_darurat)
                     view_pager.currentItem = 0
                 }
-                R.id.report -> {
-                    top_app_bar_title.text = getString(R.string.keluhan)
+                R.id.report_history -> {
+                    top_app_bar_title.text = getString(R.string.riwayat_pelaporan)
                     view_pager.currentItem = 1
                 }
                 R.id.news -> {
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
             override fun onPageSelected(position: Int) {
                 when (position) {
                     0 -> bottom_app_bar_navigation.selectedItemId = R.id.emergency
-                    1 -> bottom_app_bar_navigation.selectedItemId = R.id.report
+                    1 -> bottom_app_bar_navigation.selectedItemId = R.id.report_history
                     2 -> bottom_app_bar_navigation.selectedItemId = R.id.news
                     3 -> bottom_app_bar_navigation.selectedItemId = R.id.profile
                 }

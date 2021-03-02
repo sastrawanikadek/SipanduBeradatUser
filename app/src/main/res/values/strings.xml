@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Masyarakat Sipandu Beradat</string>
+    <string name="app_name">Krama Sipandu Beradat</string>
     <string name="sipandu_beradat">Sipandu Beradat</string>
     <string name="belum_punya_akun">Belum punya akun?</string>
     <string name="daftar_akun">Daftar Akun</string>
@@ -16,7 +16,7 @@
     <string name="kecamatan">Kecamatan</string>
     <string name="banjar">Banjar</string>
     <string name="desa_adat">Desa Adat</string>
-    <string name="jenis_kelamin">jenis Kelamin</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
     <string name="no_telepon">No Telepon</string>
     <string name="sudah_punya_akun">Sudah punya akun?</string>
     <string name="profil">Profil</string>
@@ -70,4 +70,12 @@
         darurat yang Anda alami. Mohon diperhatikan bahwa pelaporan palsu dapat
         diberikan sanksi sesuai dengan ketentuan yang berlaku</string>
     <string name="berita">Berita</string>
+    <string name="riwayat">Riwayat</string>
+    <string name="riwayat_pelaporan">Riwayat Pelaporan</string>
+    <string name="data_diri">Data Diri</string>
+    <string name="alamat">Alamat</string>
+    <string name="kerabat">Kerabat</string>
+    <string name="ubah">Ubah</string>
+    <string name="kategori">Kategori</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
 </resources>

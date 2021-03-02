@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:padding="24dp"
         android:orientation="vertical"
-        android:background="@drawable/rounded_top_rectangle"
+        android:background="@drawable/rounded_rectangle_top"
         android:elevation="24dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
