@@ -89,7 +89,6 @@
     <string name="kata_sandi_baru">Kata Sandi Baru</string>
     <string name="nama_pengguna_helper">Masukkan nama pengguna kerabat untuk mulai proses pencarian</string>
     <string name="pencarian_kerabat">Pencarian Kerabat</string>
-    <string name="google_api_key">AIzaSyB4CorTmBehqjLOVM9onM_YzbB01QHG_WY</string>
     <string name="ubah_lokasi">Ubah Lokasi</string>
     <string name="ubah_foto">Ubah Foto</string>
 </resources>
