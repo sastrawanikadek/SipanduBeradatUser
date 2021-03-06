@@ -56,6 +56,7 @@ class WelcomeActivity : AppCompatActivity() {
     private fun handleToActivity(cls: Class<*>) {
         val intent = Intent(this, cls)
         startActivity(intent)
+        finish()
     }
 
     private fun handleChangeIndicator(initial: Boolean = false) {

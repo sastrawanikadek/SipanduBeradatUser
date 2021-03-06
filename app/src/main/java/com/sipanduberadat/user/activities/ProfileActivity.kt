@@ -22,6 +22,7 @@ class ProfileActivity : AppCompatActivity() {
     fun onClick(view: View) {
         when (view.id) {
             R.id.btn_change_name -> onChangeActivity(UpdateNameActivity::class.java)
+            R.id.btn_change_gender -> onChangeActivity(UpdateGenderActivity::class.java)
         }
     }
 

@@ -1,6 +1,7 @@
 package com.sipanduberadat.user.utils
 
 import android.content.Context
+import android.content.pm.PackageManager
 import android.util.TypedValue
 import android.view.View
 import androidx.annotation.AttrRes
@@ -39,4 +40,17 @@ fun snackbarWarning(
         setBackgroundTint(ContextCompat.getColor(context, R.color.yellow))
         setTextColor(ContextCompat.getColor(context, R.color.white))
     }
+}
+
+fun checkPermissions(
+    context: Context,
+    permissions: Array<String>
+): Boolean {
+    for (permission in permissions) {
+        if (ContextCompat.checkSelfPermission(context, permission) != PackageManager.PERMISSION_GRANTED) {
+            return false
+        }
+    }
+
+    return true
 }

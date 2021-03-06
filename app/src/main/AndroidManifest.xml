@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="false"
@@ -13,7 +15,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SipanduBeradatUser">
-        <activity android:name=".activities.UpdateNameActivity"></activity>
+        <activity android:name=".activities.AddReportActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_api_key" />
+
+        <activity android:name=".activities.AddFamilyActivity" />
+        <activity android:name=".activities.UpdatePasswordActivity" />
+        <activity android:name=".activities.FamilyActivity" />
+        <activity android:name=".activities.UpdateLocationActivity" />
+        <activity android:name=".activities.LocationActivity" />
+        <activity android:name=".activities.UpdateGenderActivity" />
+        <activity android:name=".activities.UpdateNameActivity" />
         <activity android:name=".activities.ProfileActivity" />
         <activity android:name=".activities.RegisterActivity" />
         <activity android:name=".activities.LoginActivity" />

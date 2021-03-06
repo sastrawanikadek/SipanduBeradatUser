@@ -31,6 +31,15 @@ class ReportHistoryViewHolder(private val view: View): RecyclerView.ViewHolder(v
         view.report_emergency_status.setChipBackgroundColorResource(
                 if (report.jenisPelaporan.isEmergency) R.color.red_700 else R.color.blue)
         view.report_status.text = report.status
+        view.report_status.setChipBackgroundColorResource(
+            when (report.status) {
+                "Menunggu Validasi" -> R.color.yellow
+                "Sedang Ditangani" -> R.color.blue
+                "Selesai" -> R.color.green
+                "Tidak Valid" -> R.color.black
+                else -> android.R.color.darker_gray
+            }
+        )
     }
 
 }

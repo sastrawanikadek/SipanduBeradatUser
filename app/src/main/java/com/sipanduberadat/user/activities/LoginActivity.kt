@@ -26,6 +26,7 @@ class LoginActivity : AppCompatActivity() {
             R.id.btn_login -> {
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
+                finish()
             }
             R.id.btn_register -> handleToRegister()
         }

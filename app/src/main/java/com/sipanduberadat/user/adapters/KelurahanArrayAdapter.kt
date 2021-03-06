@@ -8,25 +8,25 @@ import android.widget.ArrayAdapter
 import android.widget.Filter
 import com.google.android.material.textview.MaterialTextView
 import com.sipanduberadat.user.R
-import com.sipanduberadat.user.models.Kabupaten
+import com.sipanduberadat.user.models.Kelurahan
 import java.util.*
 
-class KabupatenArrayAdapter(
-        private val ctx: Context,
-        private val items: List<Kabupaten>,
-        private val resourceId: Int = R.layout.layout_list_item
-): ArrayAdapter<Kabupaten>(ctx, resourceId, items) {
+class KelurahanArrayAdapter(
+    private val ctx: Context,
+    private val items: List<Kelurahan>,
+    private val resourceId: Int = R.layout.layout_list_item
+): ArrayAdapter<Kelurahan>(ctx, resourceId, items) {
 
-    private var filteredItems: List<Kabupaten> = items
+    private var filteredItems: List<Kelurahan> = items
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val view = convertView ?: LayoutInflater.from(ctx).inflate(resourceId, parent,
-                false)
+            false)
         view.findViewById<MaterialTextView>(R.id.item_text_view).text = filteredItems[position].name
         return view
     }
 
-    override fun getItem(position: Int): Kabupaten? {
+    override fun getItem(position: Int): Kelurahan? {
         return filteredItems[position]
     }
 
@@ -53,7 +53,7 @@ class KabupatenArrayAdapter(
 
             @Suppress("UNCHECKED_CAST")
             override fun publishResults(p0: CharSequence?, p1: FilterResults?) {
-                filteredItems = p1?.values as List<Kabupaten>
+                filteredItems = p1?.values as List<Kelurahan>
                 notifyDataSetChanged()
             }
 
