@@ -14,7 +14,9 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:background="@drawable/rounded_rectangle"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true">
     
     <ImageView
         android:id="@+id/item_icon"

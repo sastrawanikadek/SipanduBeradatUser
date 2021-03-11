@@ -1,3 +1,7 @@
 package com.sipanduberadat.user.models
 
-data class Negara(val id: Long, val name: String, val activeStatus: Boolean)
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
+data class Negara(val id: Long, val name: String, val activeStatus: Boolean): Parcelable

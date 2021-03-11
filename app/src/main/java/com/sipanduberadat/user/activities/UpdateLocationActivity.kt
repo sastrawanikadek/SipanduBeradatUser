@@ -8,7 +8,7 @@ import com.google.android.material.textfield.TextInputLayout
 import com.sipanduberadat.user.R
 import com.sipanduberadat.user.adapters.*
 import com.sipanduberadat.user.models.*
-import kotlinx.android.synthetic.main.activity_register.*
+import kotlinx.android.synthetic.main.activity_update_location.*
 import kotlinx.android.synthetic.main.fragment_top_app_bar.*
 
 class UpdateLocationActivity : AppCompatActivity() {
@@ -17,7 +17,6 @@ class UpdateLocationActivity : AppCompatActivity() {
     private lateinit var autoCompletes: Array<AutoCompleteTextView>
     private var kabupatens: List<Kabupaten> = listOf()
     private var kecamatans: List<Kecamatan> = listOf()
-    private var kelurahans: List<Kelurahan> = listOf()
     private var desaAdats: List<DesaAdat> = listOf()
     private var banjars: List<Banjar> = listOf()
 
@@ -30,10 +29,10 @@ class UpdateLocationActivity : AppCompatActivity() {
         top_app_bar_btn_back.setOnClickListener { finish() }
 
         autoCompleteLayouts = arrayOf(kabupaten_input_layout,
-            kecamatan_input_layout, kelurahan_input_layout, desa_adat_input_layout,
+            kecamatan_input_layout, desa_adat_input_layout,
             banjar_input_layout)
         autoCompletes = arrayOf(kabupaten_auto_complete,
-            kecamatan_auto_complete, kelurahan_auto_complete, desa_adat_auto_complete,
+            kecamatan_auto_complete, desa_adat_auto_complete,
             banjar_auto_complete)
 
         for (i in autoCompletes.indices) {
@@ -51,14 +50,10 @@ class UpdateLocationActivity : AppCompatActivity() {
                                 kecamatans.filter { it.kabupaten.id == selectedId })
                             )
                             2 -> autoCompletes[j].setAdapter(
-                                KelurahanArrayAdapter(this,
-                                kelurahans.filter { it.kecamatan.id == selectedId})
+                                DesaAdatArrayAdapter(this,
+                                desaAdats.filter { it.kecamatan.id == selectedId })
                             )
                             3 -> autoCompletes[j].setAdapter(
-                                DesaAdatArrayAdapter(this,
-                                desaAdats.filter { it.kelurahan.id == selectedId })
-                            )
-                            4 -> autoCompletes[j].setAdapter(
                                 BanjarArrayAdapter(this,
                                 banjars.filter { it.desaAdat.id == selectedId })
                             )
@@ -71,7 +66,6 @@ class UpdateLocationActivity : AppCompatActivity() {
 
         onResponseKabupaten()
         onResponseKecamatan()
-        onResponseKelurahan()
         onResponseDesaAdat()
         onResponseBanjar()
     }
@@ -95,21 +89,13 @@ class UpdateLocationActivity : AppCompatActivity() {
         )
     }
 
-    private fun onResponseKelurahan() {
-        kelurahans = listOf(
-            Kelurahan(1, kecamatans[0], "Abiansemal", true),
-            Kelurahan(2, kecamatans[0], "Angantaka", true),
-            Kelurahan(3, kecamatans[1], "Mengwitani", true)
-        )
-    }
-
     private fun onResponseDesaAdat() {
         desaAdats = listOf(
-            DesaAdat(1, kelurahans[0], "Abiansemal", 0.0, 0.0,
+            DesaAdat(1, kecamatans[0], "Abiansemal", 0.0, 0.0,
                 true),
-            DesaAdat(2, kelurahans[1], "Angantaka", 0.0, 0.0,
+            DesaAdat(2, kecamatans[0], "Angantaka", 0.0, 0.0,
                 true),
-            DesaAdat(3, kelurahans[2], "Mengwitani", 0.0, 0.0,
+            DesaAdat(3, kecamatans[1], "Mengwitani", 0.0, 0.0,
                 true)
         )
     }

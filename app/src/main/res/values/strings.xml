@@ -91,4 +91,7 @@
     <string name="pencarian_kerabat">Pencarian Kerabat</string>
     <string name="ubah_lokasi">Ubah Lokasi</string>
     <string name="ubah_foto">Ubah Foto</string>
+    <string name="konfirmasi_pelaporan_darurat">Apakah Anda yakin ingin membuat pelaporan darurat ini?</string>
+    <string name="batal">Batal</string>
+    <string name="lanjutkan">Lanjutkan</string>
 </resources>

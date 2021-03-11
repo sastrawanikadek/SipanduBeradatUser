@@ -105,6 +105,7 @@
                     android:name="com.google.android.gms.maps.SupportMapFragment" />
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_change_location"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"

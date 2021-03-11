@@ -150,35 +150,6 @@
                 android:layout_marginBottom="4dp"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
-                android:text="@string/kelurahan" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/kelurahan"
-                android:layout_width="match_parent"
-                android:layout_height="26dp"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:text="Gianyar"
-                android:textColor="?colorAccent"
-                android:gravity="center_vertical"
-                android:singleLine="true"
-                android:ellipsize="end" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="12dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:background="@color/gray" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="4dp"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
                 android:text="@string/desa_adat" />
 
             <com.google.android.material.textview.MaterialTextView

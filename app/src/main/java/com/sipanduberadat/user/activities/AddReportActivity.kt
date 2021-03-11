@@ -35,6 +35,11 @@ class AddReportActivity : AppCompatActivity() {
         top_app_bar_title.text = getString(R.string.pengajuan_keluhan)
         top_app_bar_btn_back.setOnClickListener { finish() }
 
+        btn_change_location.setOnClickListener {
+            val intent = Intent(this, ChooseReportLocationActivity::class.java)
+            intent.putExtra("LOCATION", location)
+            startActivityForResult(intent, 3)
+        }
         btn_change_photo.setOnClickListener { onChangePhoto() }
 
         val mapFragment: SupportMapFragment = supportFragmentManager.findFragmentById(R.id.map_fragment)
@@ -68,28 +73,33 @@ class AddReportActivity : AppCompatActivity() {
         map.moveCamera(
             CameraUpdateFactory.newLatLngZoom(
                 LatLng(location.latitude, location.longitude),
-            12.0f))
+            14.0f))
 
         if (this::marker.isInitialized) {
             marker.remove()
         }
 
-        map.addMarker(MarkerOptions().position(LatLng(location.latitude, location.longitude)))
+        marker = map.addMarker(MarkerOptions().position(LatLng(location.latitude, location.longitude)))
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        if (requestCode == 2 && resultCode == Activity.RESULT_OK) {
+        if (resultCode == Activity.RESULT_OK) {
             if (data != null) {
-                if (data.data != null) {
-                    val uri = data.data
-                    Glide.with(this).load(uri).centerCrop().into(photo_image_view)
-                    return
-                }
+                if (requestCode == 2) {
+                    if (data.data != null) {
+                        val uri = data.data
+                        Glide.with(this).load(uri).centerCrop().into(photo_image_view)
+                        return
+                    }
 
-                val bitmap = data.extras!!.get("data") as Bitmap
-                Glide.with(this).load(bitmap).centerCrop().into(photo_image_view)
+                    val bitmap = data.extras!!.get("data") as Bitmap
+                    Glide.with(this).load(bitmap).centerCrop().into(photo_image_view)
+                } else if (requestCode == 3) {
+                    location = data.getParcelableExtra("LOCATION") as Location
+                    initMap()
+                }
             }
         }
     }
