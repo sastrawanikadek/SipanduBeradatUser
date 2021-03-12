@@ -20,7 +20,7 @@ class ReportHistoryRecyclerAdapter(
             true, true), DesaAdat(1, Kecamatan(1, Kabupaten(1, Provinsi(1, Negara(1, "Indonesia", true), "Bali", true),
             "Gianyar", true), "Sukawati", true), "Batuan Kaler", (0).toDouble(), (0).toDouble(),
             true), JenisPelaporan(1, "Tornado", "tornado.png", true), Calendar.getInstance().time,
-            (0).toDouble(), (0).toDouble(), "Menunggu Pecalang"),
+            (0).toDouble(), (0).toDouble(), "Menunggu Pecalang", null, null, null),
         Pelaporan(2, Krama(2, Banjar(2, DesaAdat(2,
             Kecamatan(2, Kabupaten(1, Provinsi(1, Negara(1, "Indonesia", true), "Bali", true), "Gianyar", true), "Blahbatuh", true),
             "Pering", (0).toDouble(), (0).toDouble(),
@@ -29,7 +29,7 @@ class ReportHistoryRecyclerAdapter(
             true, true), DesaAdat(2, Kecamatan(2, Kabupaten(1, Provinsi(1, Negara(1, "Indonesia", true), "Bali", true),
             "Gianyar", true), "Blahbatuh", true), "Pering", (0).toDouble(), (0).toDouble(),
             true), JenisPelaporan(2, "Kecelakaan", "kecelakaan.png", true), Calendar.getInstance().time,
-            (0).toDouble(), (0).toDouble(), "Menunggu Validasi"),
+            (0).toDouble(), (0).toDouble(), "Menunggu Validasi", null, null, null),
         Pelaporan(3, Krama(3, Banjar(3, DesaAdat(3,
             Kecamatan(3, Kabupaten(1, Provinsi(1, Negara(1, "Indonesia", true), "Bali", true), "Gianyar", true), "Gianyar", true),
             "Serongga", (0).toDouble(), (0).toDouble(),
@@ -38,7 +38,7 @@ class ReportHistoryRecyclerAdapter(
             true, true), DesaAdat(3, Kecamatan(3, Kabupaten(1, Provinsi(1, Negara(1, "Indonesia", true), "Bali", true),
             "Gianyar", true), "Gianyar", true), "Serongga", (0).toDouble(), (0).toDouble(),
             true), JenisPelaporan(3, "Jalan Rusak", "jalanrusak.png", false), Calendar.getInstance().time,
-            (0).toDouble(), (0).toDouble(), "Sedang Ditangani"),
+            (0).toDouble(), (0).toDouble(), "Sedang Ditangani", null, null, null),
         Pelaporan(4, Krama(4, Banjar(4, DesaAdat(4,
             Kecamatan(4, Kabupaten(1, Provinsi(1, Negara(1, "Indonesia", true), "Bali", true), "Gianyar", true), "Tampaksiring", true),
             "Pejeng Kelod", (0).toDouble(), (0).toDouble(),
@@ -47,7 +47,7 @@ class ReportHistoryRecyclerAdapter(
             true, true), DesaAdat(4, Kecamatan(4, Kabupaten(1, Provinsi(1, Negara(1, "Indonesia", true), "Bali", true),
             "Gianyar", true), "Tampaksiring", true), "Pejeng Kelod", (0).toDouble(), (0).toDouble(),
             true), JenisPelaporan(4, "Kebakaran", "kebakaran.png", true), Calendar.getInstance().time,
-            (0).toDouble(), (0).toDouble(), "Selesai"),
+            (0).toDouble(), (0).toDouble(), "Selesai", null, null, null),
         Pelaporan(5, Krama(5, Banjar(5, DesaAdat(5,
             Kecamatan(5, Kabupaten(1, Provinsi(1, Negara(1, "Indonesia", true), "Bali", true), "Gianyar", true), "Tegalalang", true),
             "Kedisan", (0).toDouble(), (0).toDouble(),
@@ -56,7 +56,7 @@ class ReportHistoryRecyclerAdapter(
             true, true), DesaAdat(5, Kecamatan(5, Kabupaten(1, Provinsi(1, Negara(1, "Indonesia", true), "Bali", true),
             "Gianyar", true), "Tegalalang", true), "Kedisan", (0).toDouble(), (0).toDouble(),
             true), JenisPelaporan(5, "Pohon Tumbang", "pohontumbang.png", false), Calendar.getInstance().time,
-            (0).toDouble(), (0).toDouble(), "Tidak Valid")
+            (0).toDouble(), (0).toDouble(), "Tidak Valid", null, null, null)
     )
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ReportHistoryViewHolder {

@@ -94,4 +94,6 @@
     <string name="konfirmasi_pelaporan_darurat">Apakah Anda yakin ingin membuat pelaporan darurat ini?</string>
     <string name="batal">Batal</string>
     <string name="lanjutkan">Lanjutkan</string>
+    <string name="tambah_kerabat">Tambah Kerabat</string>
+    <string name="lini_masa">Lini Masa</string>
 </resources>

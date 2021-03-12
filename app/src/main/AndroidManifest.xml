@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SipanduBeradatUser">
-        <activity android:name=".activities.DetailReportActivity"></activity>
+        <activity android:name=".activities.ProfileOtherActivity"></activity>
+        <activity android:name=".activities.DetailReportActivity" />
         <activity android:name=".activities.ChooseReportLocationActivity" />
         <activity android:name=".activities.AddReportActivity" />
 

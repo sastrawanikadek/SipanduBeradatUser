@@ -1,8 +1,10 @@
 package com.sipanduberadat.user.viewHolders
 
+import android.content.Intent
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.sipanduberadat.user.R
+import com.sipanduberadat.user.activities.DetailReportActivity
 import com.sipanduberadat.user.models.Pelaporan
 import kotlinx.android.synthetic.main.layout_card_report_history.view.*
 import java.util.*
@@ -40,6 +42,11 @@ class ReportHistoryViewHolder(private val view: View): RecyclerView.ViewHolder(v
                 else -> android.R.color.darker_gray
             }
         )
+        view.container.setOnClickListener {
+            val intent = Intent(view.context, DetailReportActivity::class.java)
+            intent.putExtra("REPORT", report)
+            view.context.startActivity(intent)
+        }
     }
 
 }

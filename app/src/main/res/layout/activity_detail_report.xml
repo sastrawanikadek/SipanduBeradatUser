@@ -47,7 +47,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="6dp"
-                android:text="Kebakaran"
                 android:textSize="18sp"
                 android:textColor="?colorAccent"
                 android:textStyle="bold" />
@@ -55,8 +54,7 @@
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/report_datetime"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="10 Maret 2021 01:11:11" />
+                android:layout_height="wrap_content" />
 
             <View
                 android:layout_width="match_parent"
@@ -78,11 +76,8 @@
                 android:id="@+id/report_status"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/ic_circle_mini"
                 android:drawablePadding="8dp"
-                android:text="Menunggu Pecalang"
-                android:gravity="center_vertical"
-                app:drawableTint="@android:color/darker_gray" />
+                android:gravity="center_vertical" />
 
             <View
                 android:layout_width="match_parent"
@@ -95,7 +90,8 @@
                 android:id="@+id/container_report_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="gone">
 
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
@@ -109,9 +105,7 @@
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/report_description"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
-                Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet" />
+                    android:layout_height="wrap_content" />
 
                 <View
                     android:layout_width="match_parent"
@@ -126,7 +120,8 @@
                 android:id="@+id/container_report_photo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="gone">
 
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="match_parent"
