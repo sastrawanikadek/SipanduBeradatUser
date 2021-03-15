@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="48dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".activities.ProfileNotFoundActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_not_found"
+        android:contentDescription="@string/tidak_ditemukan" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/tidak_ditemukan"
+        android:textSize="24sp"
+        android:textColor="?colorAccent"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:letterSpacing="0.1" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/deskripsi_tidak_ditemukan"
+        android:lineSpacingExtra="8dp"
+        android:gravity="center" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="@string/kembali"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        app:cornerRadius="12dp"
+        app:elevation="0dp" />
+
+</LinearLayout>

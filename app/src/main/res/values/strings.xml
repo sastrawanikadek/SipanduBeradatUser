@@ -29,7 +29,6 @@
     <string name="ilustrasi_awal">Ilustrasi Awal</string>
     <string name="ubah_nama_lengkap">Ubah Nama Lengkap</string>
     <string name="ubah_nama_pengguna">Ubah Nama Pengguna</string>
-    <string name="ubah_wilayah">Ubah Wilayah</string>
     <string name="ubah_kata_sandi">Ubah Kata Sandi</string>
     <string name="ubah_jenis_kelamin">Ubah Jenis Kelamin</string>
     <string name="ubah_no_telepon">Ubah No Telepon</string>
@@ -41,10 +40,8 @@
     <string name="persetujuan_syarat_dan_ketentuan">Saya telah membaca dan menyetujui syarat dan
         ketentuan aplikasi</string>
     <string name="pelaporan">Pelaporan</string>
-    <string name="laporkan">Laporkan</string>
     <string name="batalkan">Batalkan</string>
     <string name="apakah_yakin">Apakah Anda Yakin Ingin Melaporkan Kejadian Ini?</string>
-    <string name="laporkan_keluhan_anda">Laporkan Keluhan Anda Agar Dapat Ditangani Oleh Pihak Yang Berwenang</string>
     <string name="pengajuan_keluhan">Pengajuan Keluhan</string>
     <string name="keluhan">Keluhan</string>
     <string name="judul_keluhan">Judul Keluhan</string>
@@ -53,17 +50,9 @@
     <string name="lokasi_keluhan">Lokasi Keluhan</string>
     <string name="foto_keluhan">Foto Keluhan</string>
     <string name="ajukan_keluhan">Ajukan Keluhan</string>
-    <string name="ambil_dari_kamera">Ambil Dari Kamera</string>
     <string name="pilih_foto">Pilih Foto</string>
-    <string name="laporan_kejadian">Laporan Kejadian</string>
-    <string name="pilih_lokasi">Pilih Lokasi</string>
-    <string name="cari_lokasi">Cari Lokasi</string>
-    <string name="tulis_detail_lokasi">Tulis Detail Lokasi Dengan Jelas</string>
     <string name="detail_laporan">Detail Laporan</string>
-    <string name="perkiraan_petugas_datang">Perkiraan Petugas Datang</string>
     <string name="status">Status</string>
-    <string name="detail_darurat">Detail Darurat</string>
-    <string name="pilih_lokasi_ini">Pilih Lokasi Ini</string>
     <string name="pelaporan_darurat">Pelaporan Darurat</string>
     <string name="tombol_darurat">Tombol Darurat</string>
     <string name="deskripsi_tombol_darurat">Tekan tombol darurat berikut sesuai dengan keadaan
@@ -82,7 +71,6 @@
     <string name="perempuan">Perempuan</string>
     <string name="negara">Negara</string>
     <string name="provinsi">Provinsi</string>
-    <string name="kelurahan">Kelurahan</string>
     <string name="ubah_alamat">Ubah Alamat</string>
     <string name="daynight">Day Night</string>
     <string name="kata_sandi_lama">Kata Sandi Lama</string>
@@ -96,4 +84,11 @@
     <string name="lanjutkan">Lanjutkan</string>
     <string name="tambah_kerabat">Tambah Kerabat</string>
     <string name="lini_masa">Lini Masa</string>
+    <string name="judul">Judul</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="foto">Foto</string>
+    <string name="waktu">Waktu</string>
+    <string name="tidak_ditemukan">Tidak Ditemukan</string>
+    <string name="deskripsi_tidak_ditemukan">Mohon maaf, profil yang Anda cari tidak ditemukan.
+        Silahkan tekan tombol kembali dan masukkan nama pengguna yang benar</string>
 </resources>

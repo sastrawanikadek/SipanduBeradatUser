@@ -31,14 +31,17 @@ class DetailReportActivity : AppCompatActivity() {
         val calendar = Calendar.getInstance().apply {
             time = report.time
         }
-        val datetimeText = "${calendar[Calendar.DAY_OF_MONTH]} " +
+        val datetimeText = "${calendar[Calendar.DAY_OF_MONTH].toString().padStart(2, '0')} " +
                 "${Constants.MONTH_NAMES[calendar[Calendar.MONTH]]} " +
                 "${calendar[Calendar.YEAR]} " +
-                "${calendar[Calendar.HOUR_OF_DAY]}:${calendar[Calendar.MINUTE]}:${calendar[Calendar.SECOND]}"
+                "${calendar[Calendar.HOUR_OF_DAY].toString().padStart(2, '0')}:" +
+                "${calendar[Calendar.MINUTE].toString().padStart(2, '0')}:" +
+                calendar[Calendar.SECOND].toString().padStart(2, '0')
 
         report_type.text = report.jenisPelaporan.name
-        report_datetime.text = datetimeText
+        report_reporter.text = report.krama.name
         report_status.text = report.status
+        report_datetime.text = datetimeText
 
         when (report.status) {
             "Menunggu Validasi" -> {

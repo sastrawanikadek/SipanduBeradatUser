@@ -47,12 +47,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="6dp"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="?colorAccent"
                 android:textStyle="bold" />
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/report_datetime"
+                android:id="@+id/report_reporter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -86,6 +86,57 @@
                 android:layout_marginBottom="12dp"
                 android:background="@color/gray" />
 
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:text="@string/waktu"
+                android:textSize="16sp"
+                android:textColor="?colorAccent"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/report_datetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/container_report_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:text="@string/judul"
+                    android:textSize="16sp"
+                    android:textColor="?colorAccent"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/report_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/gray" />
+
+            </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/container_report_description"
                 android:layout_width="match_parent"
@@ -97,8 +148,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="6dp"
-                    android:text="@string/keterangan_keluhan"
-                    android:textSize="18sp"
+                    android:text="@string/keterangan"
+                    android:textSize="16sp"
                     android:textColor="?colorAccent"
                     android:textStyle="bold" />
 
@@ -127,7 +178,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="6dp"
-                    android:text="@string/foto_keluhan"
+                    android:text="@string/foto"
                     android:textSize="16sp"
                     android:textColor="?colorAccent"
                     android:textStyle="bold" />
